@@ -1,0 +1,131 @@
+{
+  "basics": {
+    "name": "Stefan Loeschcke",
+    "label": "Senior software developer",
+    "picture": "http://loeschcke.dk/profile.jpg",
+    "email": "stefan@loeschcke.dk",
+    "phone": "",
+    "website": "",
+    "summary": "I’m an experienced front-end developer passionate about building user-friendly and feature-rich products.",
+    "location": {
+      "city": "Berlin",
+      "countryCode": "DE"
+    },
+    "profiles": [{
+      "network": "Github",
+      "username": "stefanbugge",
+      "url": "https://github.com/stefanbugge"
+    }]
+  },
+  "work": [{
+    "company": "Capturi",
+    "position": "Senior software developer",
+    "website": "https://www.capturi.com",
+    "startDate": "2019-09-01",
+    "summary": "Building a Meeting Optimization Platform to tackle all aspects of the meeting process: scheduling, preparation, notes/tasks/decisions and automatic meeting minute generation with use of AI and speech recognition. Capturi branched off from FirstAgenda A/S as a sister company in 2019.",
+    "highlights": [
+      "Front-end tech lead",
+      "Working in cross-functional, self-organized team",
+      "Building the product from scratch",
+      "Working in close collaboration with product team ",
+      "Building new web a",
+      "Tech: Typescript, React, Redux, Jest, Webpack, Electron, Emotion, Sass, C#, ASP.Net Core, CQRS, DDD, SQL, MongoDB"
+    ]
+  },{
+    "company": "FirstAgenda A/S",
+    "position": "Senior software developer",
+    "website": "https://firstagenda.com",
+    "startDate": "2015-10-01",
+    "endDate": "2019-09-01",
+    "summary": "Building a professional service platform for meetings. Creating administrative tools to create agendas and digitalise meeting documents as well as client software for meeting attendees which assists in preparing for and going to meetings.",
+    "highlights": [
+      "Front-end tech lead with responsibility for architecture, code quality and maintainability.",      
+      "Collaborating with Samsung on a Bixby/FirstAgenda showcase app for the Bixby 2.0 launch at the Samsung Developer Conference 2018. The collaboration entailed continuous communication with Samsung representatives throughout the project as well as designing a natural language user interface.",
+      "Improved reading experience of meeting documents by building a PDF viewer directly into the web app.",
+      "Introduced a modern front-end tech stack as well as advanced build tooling.",
+      "Tech: Typescript, React, Redux, AngularJS, Webpack, C#, ASP.Net, CQRS, SQL, MongoDB"
+    ]
+  },{
+    "company": "Cetrea A/S",
+    "position": "Software developer",
+    "website": "http://www.cetrea.com",
+    "startDate": "2013-08-01",
+    "endDate": "2015-10-01",
+    "summary": "Part of the front-end developer team building complex web applications for use in clinical logistics. Applications which assist clinical personel in their daily job as well as improving patient throughput through real-time coordination and communication",
+    "highlights": [
+      "Graphic visualizations for capacity management of the patient ward, updated in real-time to reflect the current situation in the hospital",
+      "Mobile web app for health care professionals with real-time patient and treatment information",
+      "Tech: Java, CoffeeScript, AngularJS, D3.js, Gulp, Jasmine"
+    ]
+  },{
+    "company": "EarMaster Aps",
+    "position": "Student software developer",
+    "website": "https://www.earmaster.com",
+    "startDate": "2011-08-01",
+    "endDate": "2013-07-01",
+    "summary": "Working on EarMaster Cloud, a supplement to EarMaster 6, for music schools, choirs, and universities. EarMaster Cloud adds syncing of student assigments and results as well as administration of students, teachers, classes and user licenses.",
+    "highlights": [
+      "Tech: Java, Google App Engine, Stripes Framework, JavaScript"
+    ]
+  },{
+    "company": "Aarhus University",
+    "position": "TA Digital Models",
+    "startDate": "2011-01-01",
+    "endDate": "2011-06-01",
+    "summary": "Teaching assistant in a course which introduces object-oriented programming and a selection of design patterns for 2nd semester students of Information Studies. I was responsible for class exercises and giving feedback on hand-ins."
+  },{
+    "company": "Aarhus University",
+    "position": "TA Advanced Physical Computing",
+    "startDate": "2010-08-01",
+    "endDate": "2010-10-01",
+    "summary": "Teaching assistant in a course that focuses on constructing small interactive, physical computing prototypes, based on microcontrollers and a range sensors and actuators. I was employed as an instructor during laboratory sessions to help students with concept development and implementation of prototypes."
+  }, {
+    "company": "Danmarks Radio (DR)",
+    "position": "Student Software developer",
+    "startDate": "2009-02-01",
+    "endDate": "2009-06-01",
+    "summary": "Tegneklubben (The Drawing Club) is a creative online community for children. It is based on users uploading and sharing their artworks with each other as well as giving each other constructive feedback. The community was a supplement to a TV show called \"DM i tegning\". I worked on the project along with two fellow students during a practical project at the university.",
+    "highlights": [
+      "Tech: PHP, JavaScript"
+    ]
+  }],
+  "education": [{
+    "institution": "Aarhus University, Dept. of Computer Science",
+    "area": "ICT Product Development",
+    "studyType": "M.Sc.",
+    "startDate": "2010-01-01",
+    "endDate": "2013-01-01"
+  }, {
+    "institution": "Aarhus University, Dept. of Computer Science",
+    "area": "ICT Product Development",
+    "studyType": "B.Sc.",
+    "startDate": "2007-01-01",
+    "endDate": "2010-01-01"
+  }],
+  "publications": [{
+    "name": "Ad Hoc Interfaces: A Tangible Approach to On-demand User Interfaces",
+    "publisher": "Aarhus University, Dept. of Computer Science",
+    "releaseDate": "2013-10-01",
+    "website": "http://loeschcke.dk/thesis/thesis.pdf",
+    "summary": "Master thesis"
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  }],
+  "languages": [{
+    "language": "Danish",
+    "fluency": "Native speaker"
+  }, {
+    "language": "English",
+    "fluency": "Full professional proficiency"
+  }, {
+    "language": "German",
+    "fluency": "Intermediate"
+  }]
+}

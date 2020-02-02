@@ -1,0 +1,25 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Just my resumé following the JSON Resume schema",
+  "main": "index.js",
+  "scripts": {
+    "test": "resume test",
+    "export": "resume export",
+    "serve": "resume serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanbugge/resume.git"
+  },
+  "author": {
+    "name": "Stefan Loeschcke"
+  },
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/stefanbugge/resume#readme",
+  "devDependencies": {
+    "jsonresume-theme-kards": "^1.0.2",
+    "jsonresume-theme-standard-resume": "^1.0.3",
+    "resume-cli": "^1.2.7"
+  }
+}
