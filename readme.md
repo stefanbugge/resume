@@ -18,6 +18,7 @@ Country: DE
 
 [LinkedIn - stefanbugge](https://www.linkedin.com/in/stefanbugge/)  
 [Github - stefanbugge](https://github.com/stefanbugge)  
+[Stack Overflow - bugge](https://stackoverflow.com/story/stefan.loeschcke)  
 
 ## Summary
 
@@ -26,16 +27,16 @@ I’m an experienced and proactive software developer passionate about front-end
 ## Work
 
 ### Senior software engineer, [FirstAgenda A/S](https://firstagenda.com)
-##### 2015-10-01 - present
+##### 2015-10-01 - Current
 
-Building a Meeting Optimization Platform to tackle all aspects of the meeting process.
+Building an AI-powered Meeting Optimization Platform to tackle all aspects of the meeting process.
 
 * Front-end tech lead of a team of 4 people with responsibility for application architecture, maintainability and code quality.
 * Working in a cross-functional and self-organized team with end-to-end responsibilities and defined objectives and key results (OKRs).
 * Collaborating with Samsung on a Bixby/FirstAgenda showcase app for the Bixby 2.0 launch at the Samsung Developer Conference 2018. The collaboration entailed continuous communication with Samsung representatives throughout the project as well as designing a natural language user interface.
 * Greatly improved reading experience of meeting documents by building PDF rendering capabilities into the web app, via PDF.js
 * Introduced a modern front-end tech stack as well as advanced build tooling.
-* Tech: Typescript, React, Redux, Angular, Webpack, Electron, Emotion, Sass, PostCSS, C#, ASP.Net, CQRS, DDD, SQL, MongoDB, Entity Framework
+* Tech: Typescript, React, Redux, Angular, SignalR, Webpack, Electron, Emotion, Sass, PostCSS, C#, ASP.Net, CQRS, DDD, SQL, MongoDB, Entity Framework
 
 ### Software engineer, [Cetrea A/S](http://www.cetrea.com)
 ##### 2013-08-01 - 2015-10-01
@@ -49,7 +50,7 @@ Building applications which assist clinical personel in their daily job as well 
 ### Student software developer, [EarMaster Aps](https://www.earmaster.com)
 ##### 2011-08-01 - 2013-07-01
 
-Working on EarMaster Cloud, a supplement to EarMaster 6, for music schools, choirs, and universities. EarMaster Cloud adds syncing of student assigments and results as well as administration of students, teachers, classes and user licenses.
+Working on EarMaster Cloud, a supplement to EarMaster 6, for music schools, choirs, and universities. EarMaster Cloud adds syncing of student assignments and results as well as administration of students, teachers, classes and user licenses.
 
 * Tech: Java, Google App Engine, Stripes Framework, JavaScript
 
