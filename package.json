@@ -6,7 +6,8 @@
   "scripts": {
     "test": "resume test",
     "export": "resume export",
-    "serve": "resume serve"
+    "serve": "resume serve",
+    "gen-md": "resume export temp_md.html --theme markdown && mv temp_md.html resume.md"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
   "license": "UNLICENSED",
   "homepage": "https://github.com/stefanbugge/resume#readme",
   "devDependencies": {
-    "jsonresume-theme-kards": "^1.0.2",
+    "jsonresume-theme-markdown": "^1.0.2",
     "jsonresume-theme-standard-resume": "^1.0.3",
     "resume-cli": "^1.2.7"
   }
