@@ -2,60 +2,50 @@
   "basics": {
     "name": "Stefan Loeschcke",
     "label": "Senior software developer",
-    "picture": "http://loeschcke.dk/profile.jpg",
+    "picture": "",
     "email": "stefan@loeschcke.dk",
     "phone": "",
     "website": "",
-    "summary": "I’m an experienced front-end developer passionate about building user-friendly and feature-rich products.",
+    "summary": "I’m an experienced and proactive software developer passionate about front-end development but with strong and proven skills in back-end development as well. I am driven by curiosity, problem solving, and a desire to create engaging products and user experiences. I care a great deal about application architecture, API design and build tooling. I have a strong sense of ownership of the projects I take on and I really enjoy seeing projects through from beginning to end. I thrive in collaborative working environments where people combine their different strengths, challenge each other’s way of thinking and work towards a common goal.",
     "location": {
       "city": "Berlin",
       "countryCode": "DE"
     },
     "profiles": [{
+      "network": "LinkedIn",
+      "username": "stefanbugge",
+      "url": "https://www.linkedin.com/in/stefanbugge/"
+    }, {
       "network": "Github",
       "username": "stefanbugge",
       "url": "https://github.com/stefanbugge"
     }]
   },
   "work": [{
-    "company": "Capturi",
-    "position": "Senior software developer",
-    "website": "https://www.capturi.com",
-    "startDate": "2019-09-01",
-    "summary": "Building a Meeting Optimization Platform to tackle all aspects of the meeting process: scheduling, preparation, notes/tasks/decisions and automatic meeting minute generation with use of AI and speech recognition. Capturi branched off from FirstAgenda A/S as a sister company in 2019.",
-    "highlights": [
-      "Front-end tech lead",
-      "Working in cross-functional, self-organized team",
-      "Building the product from scratch",
-      "Working in close collaboration with product team ",
-      "Building new web a",
-      "Tech: Typescript, React, Redux, Jest, Webpack, Electron, Emotion, Sass, C#, ASP.Net Core, CQRS, DDD, SQL, MongoDB"
-    ]
-  },{
     "company": "FirstAgenda A/S",
-    "position": "Senior software developer",
+    "position": "Senior software engineer",
     "website": "https://firstagenda.com",
     "startDate": "2015-10-01",
-    "endDate": "2019-09-01",
-    "summary": "Building a professional service platform for meetings. Creating administrative tools to create agendas and digitalise meeting documents as well as client software for meeting attendees which assists in preparing for and going to meetings.",
+    "summary": "Building a Meeting Optimization Platform to tackle all aspects of the meeting process.",
     "highlights": [
-      "Front-end tech lead with responsibility for architecture, code quality and maintainability.",      
+      "Front-end tech lead of a team of 4 people with responsibility for application architecture, maintainability and code quality.",
+      "Working in a cross-functional and self-organized team with end-to-end responsibilities and defined objectives and key results (OKRs).", 
       "Collaborating with Samsung on a Bixby/FirstAgenda showcase app for the Bixby 2.0 launch at the Samsung Developer Conference 2018. The collaboration entailed continuous communication with Samsung representatives throughout the project as well as designing a natural language user interface.",
-      "Improved reading experience of meeting documents by building a PDF viewer directly into the web app.",
+      "Greatly improved reading experience of meeting documents by building PDF rendering capabilities into the web app, via PDF.js",
       "Introduced a modern front-end tech stack as well as advanced build tooling.",
-      "Tech: Typescript, React, Redux, AngularJS, Webpack, C#, ASP.Net, CQRS, SQL, MongoDB"
+      "Tech: Typescript, React, Redux, Angular, Webpack, Electron, Emotion, Sass, PostCSS, C#, ASP.Net, CQRS, DDD, SQL, MongoDB, Entity Framework"
     ]
   },{
     "company": "Cetrea A/S",
-    "position": "Software developer",
+    "position": "Software engineer",
     "website": "http://www.cetrea.com",
     "startDate": "2013-08-01",
     "endDate": "2015-10-01",
-    "summary": "Part of the front-end developer team building complex web applications for use in clinical logistics. Applications which assist clinical personel in their daily job as well as improving patient throughput through real-time coordination and communication",
+    "summary": "Building applications which assist clinical personel in their daily job as well as improving patient throughput through real-time coordination and communication.",
     "highlights": [
-      "Graphic visualizations for capacity management of the patient ward, updated in real-time to reflect the current situation in the hospital",
-      "Mobile web app for health care professionals with real-time patient and treatment information",
-      "Tech: Java, CoffeeScript, AngularJS, D3.js, Gulp, Jasmine"
+      "Created the Subitizer module, a graphic representation of real-time data for capacity management of the patient ward, providing healthcare professionals to make enlightened decisions and to act proactively before issues arise",
+      "Developed a mobile web app for health care professionals with real-time patient and treatment information for a more efficient and safe work flow.",
+      "Tech: Java, CoffeeScript, AngularJS, D3.js, Gulp"
     ]
   },{
     "company": "EarMaster Aps",
@@ -81,10 +71,10 @@
     "summary": "Teaching assistant in a course that focuses on constructing small interactive, physical computing prototypes, based on microcontrollers and a range sensors and actuators. I was employed as an instructor during laboratory sessions to help students with concept development and implementation of prototypes."
   }, {
     "company": "Danmarks Radio (DR)",
-    "position": "Student Software developer",
+    "position": "Student software developer",
     "startDate": "2009-02-01",
     "endDate": "2009-06-01",
-    "summary": "Tegneklubben (The Drawing Club) is a creative online community for children. It is based on users uploading and sharing their artworks with each other as well as giving each other constructive feedback. The community was a supplement to a TV show called \"DM i tegning\". I worked on the project along with two fellow students during a practical project at the university.",
+    "summary": "Developed Tegneklubben (The Drawing Club), a creative online community for children. Children could share and remix each other's drawings - all drawings being under a Creative Commons license. The community was a supplement to a TV show called \"DM i tegning\". I worked on the project along with two fellow students during a practical project at the university.",
     "highlights": [
       "Tech: PHP, JavaScript"
     ]
@@ -109,15 +99,7 @@
     "website": "http://loeschcke.dk/thesis/thesis.pdf",
     "summary": "Master thesis"
   }],
-  "skills": [{
-    "name": "Web Development",
-    "level": "Master",
-    "keywords": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ]
-  }],
+  "skills": [],
   "languages": [{
     "language": "Danish",
     "fluency": "Native speaker"
@@ -126,6 +108,6 @@
     "fluency": "Full professional proficiency"
   }, {
     "language": "German",
-    "fluency": "Intermediate"
+    "fluency": "Limited working proficiency"
   }]
 }
