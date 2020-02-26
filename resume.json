@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Stefan Loeschcke",
-    "label": "Senior software developer",
+    "label": "Senior software engineer",
     "picture": "",
     "email": "stefan@loeschcke.dk",
     "phone": "",
@@ -30,7 +30,7 @@
     "position": "Senior software engineer",
     "website": "https://firstagenda.com",
     "startDate": "2015-10-01",
-    "summary": "Building an AI-powered Meeting Optimization Platform to tackle all aspects of the meeting process.",
+    "summary": "Building a Meeting Optimization Platform to tackle all aspects of the meeting process.",
     "highlights": [
       "Front-end tech lead of a team of 4 people with responsibility for application architecture, maintainability and code quality.",
       "Working in a cross-functional and self-organized team with end-to-end responsibilities and defined objectives and key results (OKRs).", 
