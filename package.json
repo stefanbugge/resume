@@ -4,9 +4,8 @@
   "description": "Just my resumé following the JSON Resume schema",
   "main": "index.js",
   "scripts": {
-    "test": "resume test",
-    "export": "resume export",
     "serve": "resume serve",
+    "gen-html": "resume export temp_html.html --format html && mv temp_html.html docs/index.html",
     "gen-md": "resume export temp_md.html --theme markdown && mv temp_md.html resume.md"
   },
   "repository": {
