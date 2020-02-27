@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "serve": "resume serve",
-    "gen-html": "resume export temp_html.html --format html && mv temp_html.html docs/index.html",
-    "gen-md": "resume export temp_md.html --theme markdown && mv temp_md.html resume.md"
+    "export-html": "node export.js --format html",
+    "export-md": "node export.js --format markdown"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,9 @@
     "helper-date": "^1.0.1",
     "jsonresume-theme-markdown": "^1.0.2",
     "resume-cli": "^1.2.7"
+  },
+  "dependencies": {
+    "ncp": "^2.0.0",
+    "yargs": "^15.1.0"
   }
 }

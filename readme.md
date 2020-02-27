@@ -29,7 +29,7 @@ I’m an experienced and proactive software developer passionate about front-end
 ### Senior software engineer, [FirstAgenda A/S](https://firstagenda.com)
 ##### 2015-10-01 - Current
 
-Building an AI-powered Meeting Optimization Platform to tackle all aspects of the meeting process.
+Building a Meeting Optimization Platform to tackle all aspects of the meeting process.
 
 * Front-end tech lead of a team of 4 people with responsibility for application architecture, maintainability and code quality.
 * Working in a cross-functional and self-organized team with end-to-end responsibilities and defined objectives and key results (OKRs).

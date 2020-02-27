@@ -2,515 +2,467 @@
 <html>
 	<head>
 	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>Stefan Loeschcke</title>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	
-	<style type="text/css">
-	@import url(
-	https://fonts.googleapis.com/css?family=Lato:400,700
-);
-body {
-	background: #fff;
-	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
-}
-a {
-	color: #2ecc71;
-}
-a:focus,
-a:hover {
-	color: #f1c40f;
-	text-decoration: none;
-}
-p {
-	line-height: 1.5;
-	margin: 0;
-}
-p + p {
-	margin-top: 10px;
-}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+		
+		<title>Stefan Loeschcke</title>
+
+		<style>
+		html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
 h1,
 h2,
 h3,
-h4 {
-	margin-top: 0
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
 section {
-	margin-top: 30px;
+  display: block;
 }
-li {
-	line-height: 1.8;
-	list-style: none;
+body {
+  line-height: 1.5;
 }
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
+ol,
+ul {
+  list-style: none;
 }
-blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
+blockquote,
+q {
+  quotes: none;
 }
-em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-.container {
-	max-width: 750px;
-	padding: 0 30px;
-}
-.col-sm-6 {
-	margin-bottom: 10px;
-}
-.col-sm-12 h4 {
-	margin-top: 12px; 
-}
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
-}
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
-}
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
-}
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
-}
-#content aside {
-	text-align: right;
-	padding-right: 30px;
-}
-#profiles .network {
-	text-transform: capitalize;
-}
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-#education .area {
-	font-weight: bold;
-}
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-#education .studyType {
-	margin-left: 25px;
-}
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-#publications .website a:before {
-	content: attr(href);
+html,
+button,
+input,
+textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Cantarell,
+    Roboto, Helvetica, Arial, Noto Sans, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
-	}
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-	}
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
-}
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
-}
-@media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-	#actions {
-		display: none;
-	}
+:root {
+  --page-max-width: 600px;
+  --main-bg-color: #fafafa;
+  --main-txt-color: #333;
+
+  --heading-color--muted: #c5c9d5;
+  --txt-color--muted: #888;
+
+  --link-color: 255, 215, 221;
+
+  --tag-bg: #edeff5;
+  --tag-bg--hover: rgb(255, 215, 221);
 }
 
-	</style>
-	
+body {
+  margin: 0 auto;
+  padding: 4rem 2rem 8rem 2rem;
+  max-width: var(--page-max-width);
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
+}
+
+h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-top: 4rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--heading-color--muted);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+p {
+  margin-bottom: 0.3125rem;
+}
+
+a {
+  transition: all 160ms ease 0s;
+  box-shadow: rgba(var(--link-color), 0.3) 0px -9px 0px inset;
+  border-bottom: 2px solid rgb(var(--link-color));
+  text-decoration: none;
+  color: #323336;
+}
+
+a:hover {
+  box-shadow: rgb(var(--link-color)) 0px -1.2em 0px inset;
+}
+
+section ul {
+  margin-top: 0.5rem;
+  margin-left: 2.5rem;
+  list-style: disc;
+}
+
+section li {
+  margin-bottom: 0.5rem;
+}
+
+.text-muted {
+  color: var(--txt-color--muted);
+}
+
+.contact {
+  padding-top: 2rem;
+}
+
+.contact span {
+  width: 100px;
+  display: inline-block;
+}
+
+.headline {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: 1.2px;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  background-color: var(--tag-bg);
+  margin: 0 0.5rem 0.5rem 0;
+  white-space: nowrap;
+}
+
+a.tag {
+  box-shadow: none;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+a.tag:hover {
+  background-color: var(--tag-bg--hover);
+}
+
+.languages {
+  padding-top: 2rem;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(33.333%, 1fr));
+}
+
+		</style>
+		
+		<script src="https://kit.fontawesome.com/6b34f1f9a6.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-	
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					<h1>
-						Stefan Loeschcke
-					</h1>
-					<h2>
-						Senior software engineer
-					</h2>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div id="content" class="container">
 
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email">stefan@loeschcke.dk</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone"></div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Website</strong>
-				<div class="website">
-					<a href=""></a>
+		<div id="resume">
+			<h1>Stefan Loeschcke</h1>
+			<p>Senior software engineer</p>
+			
+			<p class="text-muted">Berlin, DE</p>
+			
+			<p class="text-muted">I’m an experienced and proactive software developer passionate about front-end development but with strong and proven skills in back-end development as well. I am driven by curiosity, problem solving, and a desire to create engaging products and user experiences. I care a great deal about application architecture, API design and build tooling. I have a strong sense of ownership of the projects I take on and I really enjoy seeing projects through from beginning to end. I thrive in collaborative working environments where people combine their different strengths, challenge each other’s way of thinking and work towards a common goal.</p>
+			
+			<section>
+				<h2>Profiles</h2>
+			
+			    <div class="profiles">
+			        <a href="https://www.linkedin.com/in/stefanbugge/" target="_blank" rel="noopener" class="tag" title="LinkedIn">
+			            <i class="fab fa-linkedin"></i>
+			            <span>stefanbugge</span>
+			        </a>
+			        <a href="https://github.com/stefanbugge" target="_blank" rel="noopener" class="tag" title="Github">
+			            <i class="fab fa-github"></i>
+			            <span>stefanbugge</span>
+			        </a>
+			        <a href="https://stackoverflow.com/story/stefan.loeschcke" target="_blank" rel="noopener" class="tag" title="Stack Overflow">
+			            <i class="fab fa-stack-overflow"></i>
+			            <span>bugge</span>
+			        </a>
+			    </div>
+			
+			</section>
+			<section>
+				<h2>Work Experience</h2>
+				<div>
+					<span class="headline">
+						<a target="_blank" rel="noopener" href="https://firstagenda.com">FirstAgenda A/S</a>
+					</span>
+					<p class="text-muted">
+						Senior software engineer |
+						Oct, 2015
+			
+			
+						- Current
+					</p>
+					<div class="summary">
+						<p>Building a Meeting Optimization Platform to tackle all aspects of the meeting process.</p>
+					</div>
+					<ul class="highlights">
+						<li>Front-end tech lead of a team of 4 people with responsibility for application architecture, maintainability and code quality.</li>
+						<li>Working in a cross-functional and self-organized team with end-to-end responsibilities and defined objectives and key results (OKRs).</li>
+						<li>Collaborating with Samsung on a Bixby/FirstAgenda showcase app for the Bixby 2.0 launch at the Samsung Developer Conference 2018. The collaboration entailed continuous communication with Samsung representatives throughout the project as well as designing a natural language user interface.</li>
+						<li>Greatly improved reading experience of meeting documents by building PDF rendering capabilities into the web app, via PDF.js</li>
+						<li>Introduced a modern front-end tech stack as well as advanced build tooling.</li>
+						<li>Tech: Typescript, React, Redux, Angular, SignalR, Webpack, Electron, Emotion, Sass, PostCSS, C#, ASP.Net, CQRS, DDD, SQL, MongoDB, Entity Framework</li>
+					</ul>
 				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
-			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
-			<p>I’m an experienced and proactive software developer passionate about front-end development but with strong and proven skills in back-end development as well. I am driven by curiosity, problem solving, and a desire to create engaging products and user experiences. I care a great deal about application architecture, API design and build tooling. I have a strong sense of ownership of the projects I take on and I really enjoy seeing projects through from beginning to end. I thrive in collaborative working environments where people combine their different strengths, challenge each other’s way of thinking and work towards a common goal.</p>
-		</div>
-	</section>
-	<section id="profiles" class="row">
-		<aside class="col-sm-3">
-			<h3>Profiles</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-				<div class="col-sm-6">
-					<strong class="network">
-						LinkedIn
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://www.linkedin.com/in/stefanbugge/">stefanbugge</a>
-						</div>
+				<div>
+					<span class="headline">
+						<a target="_blank" rel="noopener" href="http://www.cetrea.com">Cetrea A/S</a>
+					</span>
+					<p class="text-muted">
+						Software engineer |
+						Aug, 2013
+			
+			
+						- Oct, 2015
+					</p>
+					<div class="summary">
+						<p>Building applications which assist clinical personel in their daily job as well as improving patient throughput through real-time coordination and communication.</p>
+					</div>
+					<ul class="highlights">
+						<li>Created the Subitizer module, a graphic representation of real-time data for capacity management of the patient ward, providing healthcare professionals to make enlightened decisions and to act proactively before issues arise</li>
+						<li>Developed a mobile web app for health care professionals with real-time patient and treatment information for a more efficient and safe work flow.</li>
+						<li>Tech: Java, CoffeeScript, AngularJS, D3.js, Gulp</li>
+					</ul>
+				</div>
+				<div>
+					<span class="headline">
+						<a target="_blank" rel="noopener" href="https://www.earmaster.com">EarMaster Aps</a>
+					</span>
+					<p class="text-muted">
+						Student software developer |
+						Aug, 2011
+			
+			
+						- Jul, 2013
+					</p>
+					<div class="summary">
+						<p>Working on EarMaster Cloud, a supplement to EarMaster 6, for music schools, choirs, and universities. EarMaster Cloud adds syncing of student assignments and results as well as administration of students, teachers, classes and user licenses.</p>
+					</div>
+					<ul class="highlights">
+						<li>Tech: Java, Google App Engine, Stripes Framework, JavaScript</li>
+					</ul>
+				</div>
+				<div>
+					<span class="headline">
+						Aarhus University
+					</span>
+					<p class="text-muted">
+						TA Digital Models |
+						Jan, 2011
+			
+			
+						- Jun, 2011
+					</p>
+					<div class="summary">
+						<p>Teaching assistant in a course which introduces object-oriented programming and a selection of design patterns for 2nd semester students of Information Studies. I was responsible for class exercises and giving feedback on hand-ins.</p>
 					</div>
 				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						Github
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://github.com/stefanbugge">stefanbugge</a>
-						</div>
+				<div>
+					<span class="headline">
+						Aarhus University
+					</span>
+					<p class="text-muted">
+						TA Advanced Physical Computing |
+						Aug, 2010
+			
+			
+						- Oct, 2010
+					</p>
+					<div class="summary">
+						<p>Teaching assistant in a course that focuses on constructing small interactive, physical computing prototypes, based on microcontrollers and a range sensors and actuators. I was employed as an instructor during laboratory sessions to help students with concept development and implementation of prototypes.</p>
 					</div>
 				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						Stack Overflow
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://stackoverflow.com/story/stefan.loeschcke">bugge</a>
-						</div>
+				<div>
+					<span class="headline">
+						Danmarks Radio (DR)
+					</span>
+					<p class="text-muted">
+						Student software developer |
+						Feb, 2009
+			
+			
+						- Jun, 2009
+					</p>
+					<div class="summary">
+						<p>Developed Tegneklubben (The Drawing Club), a creative online community for children. Children could share and remix each other&#x27;s drawings - all drawings being under a Creative Commons license. The community was a supplement to a TV show called &quot;DM i tegning&quot;. I worked on the project along with two fellow students during a practical project at the university.</p>
 					</div>
+					<ul class="highlights">
+						<li>Tech: PHP, JavaScript</li>
+					</ul>
 				</div>
-			</div>
+			</section>
+			<section>
+				<h2>Education</h2>
+				<span class="headline">Aarhus University, Dept. of Computer Science</span>
+				<p class="text-muted">
+					M.Sc. - ICT Product Development
+					| 2010
+					- 2013
+				</p>
+				<span class="headline">Aarhus University, Dept. of Computer Science</span>
+				<p class="text-muted">
+					B.Sc. - ICT Product Development
+					| 2007
+					- 2010
+				</p>
+			</section>
+			<section>
+				<h2>Projects</h2>
+				<span class="headline">
+					<a target="_blank" rel="noopener" href="http://loeschcke.dk/thesis/thesis.pdf">Ad Hoc Interfaces: A Tangible Approach to On-demand User Interfaces</a>
+				</span>
+				<p class="text-muted">
+					Oct, 2013
+				</p>
+				<p>Master thesis</p>
+			</section>
+			<section>
+				<h2>Languages</h2>
+			
+			    <div class="languages">
+			        <div class="language">
+			            <div>Danish</div>
+			            <div class="text-muted">Native speaker</div>
+			        </div>
+			        <div class="language">
+			            <div>English</div>
+			            <div class="text-muted">Full professional proficiency</div>
+			        </div>
+			        <div class="language">
+			            <div>German</div>
+			            <div class="text-muted">Limited working proficiency</div>
+			        </div>
+			    </div>
+			
+			</section>
+			<section>
+				<h2>Contact Information</h2>
+				<div class="contact">
+			
+					<p>
+						<span>Email:</span>
+						<a href="mailto:stefan@loeschcke.dk" target="_blank" rel="noopener noreferrer">stefan@loeschcke.dk</a>
+					</p>
+				</div>
+			
+			
+			</section>
 		</div>
-	</section>
 
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>FirstAgenda A/S</span>
-					<span class="date">
-						2015-10-01 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://firstagenda.com">https://firstagenda.com</a>
-				</div>
-				<div class="position">
-					Senior software engineer
-				</div>
-				<div class="summary">
-					<p>Building a Meeting Optimization Platform to tackle all aspects of the meeting process.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Front-end tech lead of a team of 4 people with responsibility for application architecture, maintainability and code quality.</li>
-					<li class="bullet">Working in a cross-functional and self-organized team with end-to-end responsibilities and defined objectives and key results (OKRs).</li>
-					<li class="bullet">Collaborating with Samsung on a Bixby/FirstAgenda showcase app for the Bixby 2.0 launch at the Samsung Developer Conference 2018. The collaboration entailed continuous communication with Samsung representatives throughout the project as well as designing a natural language user interface.</li>
-					<li class="bullet">Greatly improved reading experience of meeting documents by building PDF rendering capabilities into the web app, via PDF.js</li>
-					<li class="bullet">Introduced a modern front-end tech stack as well as advanced build tooling.</li>
-					<li class="bullet">Tech: Typescript, React, Redux, Angular, SignalR, Webpack, Electron, Emotion, Sass, PostCSS, C#, ASP.Net, CQRS, DDD, SQL, MongoDB, Entity Framework</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Cetrea A/S</span>
-					<span class="date">
-						2013-08-01 — 2015-10-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.cetrea.com">http://www.cetrea.com</a>
-				</div>
-				<div class="position">
-					Software engineer
-				</div>
-				<div class="summary">
-					<p>Building applications which assist clinical personel in their daily job as well as improving patient throughput through real-time coordination and communication.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Created the Subitizer module, a graphic representation of real-time data for capacity management of the patient ward, providing healthcare professionals to make enlightened decisions and to act proactively before issues arise</li>
-					<li class="bullet">Developed a mobile web app for health care professionals with real-time patient and treatment information for a more efficient and safe work flow.</li>
-					<li class="bullet">Tech: Java, CoffeeScript, AngularJS, D3.js, Gulp</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>EarMaster Aps</span>
-					<span class="date">
-						2011-08-01 — 2013-07-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://www.earmaster.com">https://www.earmaster.com</a>
-				</div>
-				<div class="position">
-					Student software developer
-				</div>
-				<div class="summary">
-					<p>Working on EarMaster Cloud, a supplement to EarMaster 6, for music schools, choirs, and universities. EarMaster Cloud adds syncing of student assignments and results as well as administration of students, teachers, classes and user licenses.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Tech: Java, Google App Engine, Stripes Framework, JavaScript</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Aarhus University</span>
-					<span class="date">
-						2011-01-01 — 2011-06-01
-					</span>
-				</h4>
-				<div class="position">
-					TA Digital Models
-				</div>
-				<div class="summary">
-					<p>Teaching assistant in a course which introduces object-oriented programming and a selection of design patterns for 2nd semester students of Information Studies. I was responsible for class exercises and giving feedback on hand-ins.</p>
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Aarhus University</span>
-					<span class="date">
-						2010-08-01 — 2010-10-01
-					</span>
-				</h4>
-				<div class="position">
-					TA Advanced Physical Computing
-				</div>
-				<div class="summary">
-					<p>Teaching assistant in a course that focuses on constructing small interactive, physical computing prototypes, based on microcontrollers and a range sensors and actuators. I was employed as an instructor during laboratory sessions to help students with concept development and implementation of prototypes.</p>
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Danmarks Radio (DR)</span>
-					<span class="date">
-						2009-02-01 — 2009-06-01
-					</span>
-				</h4>
-				<div class="position">
-					Student software developer
-				</div>
-				<div class="summary">
-					<p>Developed Tegneklubben (The Drawing Club), a creative online community for children. Children could share and remix each other&#x27;s drawings - all drawings being under a Creative Commons license. The community was a supplement to a TV show called &quot;DM i tegning&quot;. I worked on the project along with two fellow students during a practical project at the university.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Tech: PHP, JavaScript</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Aarhus University, Dept. of Computer Science</span>
-					<span class="date">
-						2010-01-01 — 2013-01-01
-					</span>
-				</h4>
-				<div class="area">
-					ICT Product Development
-				</div>
-				<div class="studyType">
-					M.Sc.
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Aarhus University, Dept. of Computer Science</span>
-					<span class="date">
-						2007-01-01 — 2010-01-01
-					</span>
-				</h4>
-				<div class="area">
-					ICT Product Development
-				</div>
-				<div class="studyType">
-					B.Sc.
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	
-	<section id="publications" class="row">
-		<aside class="col-sm-3">
-			<h3>Publications</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Ad Hoc Interfaces: A Tangible Approach to On-demand User Interfaces</span>
-					<span class="date">
-						2013-10-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://loeschcke.dk/thesis/thesis.pdf"></a>
-				</div>
-				<div class="publisher">
-					<em>Published by</em>
-					<strong>Aarhus University, Dept. of Computer Science</strong>
-				</div>
-				<div class="summary">
-					<p>Master thesis</p>
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-
-	<section id="languages" class="row">
-		<aside class="col-sm-3">
-			<h3>Languages</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>Danish</strong>
-				</div>
-				<div class="fluency">
-					Native speaker
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>English</strong>
-				</div>
-				<div class="fluency">
-					Full professional proficiency
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>German</strong>
-				</div>
-				<div class="fluency">
-					Limited working proficiency
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	
-
-	</div>
-	
 	</body>
 </html>
