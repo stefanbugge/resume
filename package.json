@@ -16,7 +16,7 @@
     "name": "Stefan Loeschcke"
   },
   "license": "UNLICENSED",
-  "homepage": "https://github.com/stefanbugge/resume#readme",
+  "homepage": "https://stefanbugge.github.io/resume",
   "devDependencies": {
     "handlebars": "4.7.6",
     "helper-date": "1.0.1",
