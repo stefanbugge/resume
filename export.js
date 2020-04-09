@@ -1,12 +1,13 @@
 #!/usr/bin/env node
+const fs = require('fs')
+const path = require("path")
 const argv = require('yargs').argv
-const ncp = require('ncp').ncp
 const { exec } = require('child_process')
 
 // ./export.js --format html
 switch (argv.format) {
   case 'html': {
-    exportHtml()
+    // run yarn export-html instead
     break
   }
   case 'markdown': {
@@ -15,34 +16,27 @@ switch (argv.format) {
   }
 }
 
-function exportHtml () {
-  const tempThemeName = 'foobar'
-  const destination = './docs/index.html'
-  ncp('./theme', `./node_modules/jsonresume-theme-${tempThemeName}`, function (err) {
-    if (err) {
-      return console.error(err)
-    }
-    generate(destination, tempThemeName, 'html')
-   })
-}
-
 function exportMarkdown () {
-  // resume-cli does not support .md extension ...
-  const tempDestination = 'temp_md.html'
-  const destination = './resume.md'
-  generate(tempDestination, 'markdown', 'markdown', function () {
-    exec(`mv ${tempDestination} ${destination}`)
+  // resume-cli does not support .md extension for can generate the format for some reason ...
+  const tempFilename = 'temp_md.html'
+  const destination = './readme.md'
+  generate(tempFilename, 'markdown', 'markdown', function () {
+    const header = fs.readFileSync(path.join(__dirname, '/markdown-header.md'), 'utf-8')
+    const resume = fs.readFileSync(path.join(__dirname, tempFilename), 'utf8')
+    const output = header + '\n' + resume
+    fs.writeFileSync(destination, output, 'utf-8')
+    fs.unlinkSync(tempFilename)
   })
 }
 
-const noop = () => {}
-
-function generate (destination, theme, format, callback = noop) {
-  exec(`./node_modules/resume-cli/index.js export ${destination} --theme ${theme} --format ${format}`, (err, stdout, stderr) => {
+function generate (destination, theme, format, callback) {
+  exec(`resume export ${destination} --theme ${theme} --format ${format}`, (err, stdout, stderr) => {
     if (err) {
       return console.error(err)
     }
     console.log(stdout)
-    callback()
+    if (typeof callback === 'function') {
+      callback()
+    } 
   })
 }

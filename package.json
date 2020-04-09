@@ -4,8 +4,9 @@
   "description": "Just my resumé following the JSON Resume schema",
   "main": "index.js",
   "scripts": {
+    "resume": "resume",
     "serve": "resume serve",
-    "export-html": "node export.js --format html",
+    "export-html": "resume export ./docs/index.html --theme standard-resume --format html --resume=./resume.json",
     "export-md": "node export.js --format markdown"
   },
   "repository": {
@@ -21,10 +22,10 @@
     "handlebars": "4.7.6",
     "helper-date": "1.0.1",
     "jsonresume-theme-markdown": "github:stefanbugge/jsonresume-theme-markdown",
+    "jsonresume-theme-standard-resume": "github:stefanbugge/jsonresume-theme-standard-resume",
     "resume-cli": "^1.2.7"
   },
   "dependencies": {
-    "ncp": "^2.0.0",
     "yargs": "^15.1.0"
   }
 }
