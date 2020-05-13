@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "resume": "resume",
-    "serve": "resume serve",
+    "dev": "resume serve",
     "export-html": "resume export ./docs/index.html --theme standard-resume --format html --resume=./resume.json",
     "export-md": "node export.js --format markdown"
   },
