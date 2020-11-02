@@ -23,7 +23,7 @@
     "helper-date": "1.0.1",
     "jsonresume-theme-markdown": "github:stefanbugge/jsonresume-theme-markdown",
     "jsonresume-theme-standard-resume": "github:stefanbugge/jsonresume-theme-standard-resume",
-    "resume-cli": "^1.2.7"
+    "resume-cli": "^2.0.0"
   },
   "dependencies": {
     "yargs": "^15.1.0"
