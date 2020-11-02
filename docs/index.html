@@ -154,7 +154,7 @@ textarea {
   --link-color: 255, 215, 221;
 
   --tag-bg: #edeff5;
-  --tag-bg--hover: rgb(255, 215, 221);
+  --tag-bg--hover: rgb(var(--link-color));
 }
 
 body {
@@ -179,6 +179,13 @@ h2 {
   color: var(--heading-color--muted);
   text-transform: uppercase;
   letter-spacing: 1.2px;
+}
+
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 p {
@@ -261,9 +268,31 @@ a.tag:hover {
   grid-template-columns: repeat(auto-fill, minmax(33.333%, 1fr));
 }
 
+.skills {
+  padding-top: 1rem;
+}
+
+.skill__keywords {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill__level {
+  font-weight: normal;
+}
+
+
 		</style>
 		
 		<script src="https://kit.fontawesome.com/6b34f1f9a6.js" crossorigin="anonymous"></script>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-4MVEQ3ESVT"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-4MVEQ3ESVT');
+			</script>
 	</head>
 	<body>
 
@@ -408,18 +437,24 @@ a.tag:hover {
 			</section>
 			<section>
 				<h2>Education</h2>
-				<span class="headline">Aarhus University, Dept. of Computer Science</span>
-				<p class="text-muted">
-					M.Sc. - ICT Product Development
-					| 2010
-					- 2013
-				</p>
-				<span class="headline">Aarhus University, Dept. of Computer Science</span>
-				<p class="text-muted">
-					B.Sc. - ICT Product Development
-					| 2007
-					- 2010
-				</p>
+					<span class="headline">
+							Aarhus University, Dept. of Computer Science
+					</span>
+					<p class="text-muted">
+								M.Sc. - ICT Product Development
+							| 2010
+								- 2013
+							
+					</p>
+					<span class="headline">
+							Aarhus University, Dept. of Computer Science
+					</span>
+					<p class="text-muted">
+								B.Sc. - ICT Product Development
+							| 2007
+								- 2010
+							
+					</p>
 			</section>
 			<section>
 				<h2>Projects</h2>
