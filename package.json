@@ -19,7 +19,7 @@
   "license": "UNLICENSED",
   "homepage": "https://stefanbugge.github.io/resume",
   "devDependencies": {
-    "handlebars": "4.7.6",
+    "handlebars": "4.7.7",
     "helper-date": "1.0.1",
     "jsonresume-theme-markdown": "github:stefanbugge/jsonresume-theme-markdown",
     "jsonresume-theme-standard-resume": "github:stefanbugge/jsonresume-theme-standard-resume",
